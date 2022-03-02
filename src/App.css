@@ -1,0 +1,13 @@
+input, button {
+  all: unset;
+}
+
+*, *:after, *:before{
+  box-sizing: border-box !important;
+}
+
+:root {
+  --blue: #32589e;
+  --row-height: 40px;
+}
+

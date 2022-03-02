@@ -1,0 +1,29 @@
+.CurrencyDropdownItem {
+    display: flex;
+    color: var(--blue);
+    align-items: center;
+    flex: 1 0 auto;
+    height: var(--row-height);
+}
+
+.CurrencyDropdown_Content .CurrencyDropdownItem:hover,
+.CurrencyDropdownItem[is-selected="true"] {
+    background-color: var(--blue);
+    color: white;
+}
+
+.CurrencyDropdownItem_Flag{
+    width: 20px;
+    height: 15px;
+}
+
+.CurrencyDropdownItem_CurrencyCode {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.CurrencyDropdownItem_Separator,
+.CurrencyDropdownItem_CurrencyName {
+    font-size: 11px;
+    transform: translateY(2px);
+}

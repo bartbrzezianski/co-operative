@@ -1,0 +1,67 @@
+.CurrencyDropdown {
+    display: flex;
+    position: relative;
+    height: var(--row-height);
+    align-items: center;
+}
+
+.CurrencyDropdownButton {
+    display: flex;
+    cursor: pointer;
+    flex: 1 0 auto;
+}
+
+.CurrencyDropdown_PlaceholderText {
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    flex: 1 0 auto;
+    padding: 10px;
+}
+
+.CurrencyDropdown_PlaceholderText:hover {
+    opacity: .8;
+}
+
+.CurrencyDropdownButton::after {
+    color: var(--blue);
+    content: "\2193";
+    line-height: var(--row-height);
+}
+
+.CurrencyDropdown_Content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: var(--row-height);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    border: 2px solid var(--blue);
+    border-top: none;
+    margin: 0 10px;
+}
+
+.CurrencyDropdown_ContentFilter {
+    width: 100%;
+    height: var(--row-height);
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+.CurrencyDropdown_NoResults {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: var(--row-height);
+    color: var(--blue);
+}
+
+.CurrencyDropdown_Currencies {
+    width: 100%;
+    max-height: 50vh;
+    overflow-y: scroll;
+}

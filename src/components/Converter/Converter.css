@@ -1,0 +1,89 @@
+
+.Converter {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media (min-width: 500px) {
+    .Converter {
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+}
+
+.ConverterInputWrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-bottom: 2px solid var(--blue);
+    height: var(--row-height);
+}
+
+.ConverterInput_Label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all linear 0.1s;
+    color: grey;
+    opacity: 0.7;
+}
+
+.ConverterInput_Label-top {
+    top: 0px;
+    font-size: 11px;
+    opacity: 1;
+}
+
+.ConverterInput {
+    display: flex;
+    padding: 5px;
+}
+
+.ConverterInput_Input {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 5px;
+    color: var(--blue);
+}
+
+.ConverterInput_Button {
+    cursor: pointer;
+    color: var(--blue);
+    flex: 0 0 auto;
+}
+
+
+.Converter_ConvertButtonWrapper {
+    display: flex;
+}
+
+.Converter_ConvertButton {
+    flex: 1 0 auto;
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Converter_ConvertButton:hover {
+    opacity: 0.8;
+}
+
+.Converter_ConvertButton:disabled {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.Converter_ConversionResult {
+    display: flex;
+    justify-content: center;
+    color: var(--blue);
+    margin-top: 10px;
+    height: var(--row-height);
+}
+

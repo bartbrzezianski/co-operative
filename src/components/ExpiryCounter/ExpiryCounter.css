@@ -1,0 +1,12 @@
+.ExpiryCounter {
+    display: flex;
+    color: white;
+    background-color: var(--blue);
+    max-width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin:0 auto;
+    border: 5px solid #506894;
+    height: var(--row-height);
+}
